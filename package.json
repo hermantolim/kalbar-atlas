@@ -1,0 +1,19 @@
+{
+  "name": "kalbar-atlas",
+  "version": "1.0.0",
+  "description": "Kalimantan Barat Atlas",
+  "main": "index.js",
+  "scripts": {
+    "run": "rm -rf data && mkdir data && node ./index.js",
+    "topo": "mapshaper data/counties.geojson -o format=topojson data/counties.topojson"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hermantolim/kalbar-atlas.git"
+  },
+  "author": "Hermanto Lim <hermantolim@outlook.com>",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "mapshaper": "^0.5.68"
+  }
+}
