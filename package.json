@@ -4,8 +4,8 @@
   "description": "Kalimantan Barat Atlas",
   "main": "index.js",
   "scripts": {
-    "run": "rm -rf data && mkdir data && node ./index.js",
-    "topo": "mapshaper data/counties.geojson -o format=topojson data/counties.topojson"
+    "update": "rm -rf data && mkdir data && node ./index.js",
+    "topo": "mapshaper data/counties.geojson -o bbox format=topojson data/counties.topojson"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
   "author": "Hermanto Lim <hermantolim@outlook.com>",
   "dependencies": {
     "axios": "^0.21.1",
-    "mapshaper": "^0.5.68"
+    "mapshaper": "^0.5.68",
+    "random-useragent": "^0.5.0"
   }
 }
